@@ -1,0 +1,134 @@
+/* Professional Styling for Jewelry Store Application */
+
+body {
+  font-family: 'Playfair Display', serif;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+  margin: 40px auto;
+}
+
+h1, h2 {
+  text-align: center;
+  font-weight: 700;
+}
+
+.text-gold {
+  color: #d4af37;
+}
+
+.btn-gold {
+  background: #d4af37;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-gold:hover {
+  background: #c39c32;
+  transform: scale(1.05);
+}
+
+/* Form Styling */
+.form-label {
+  font-weight: bold;
+  color: #444;
+}
+
+.form-control, .form-select {
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+textarea.form-control {
+  resize: vertical;
+}
+
+/* Table Styling */
+.table-gold {
+  background: #d4af37;
+  color: white;
+  font-weight: bold;
+}
+
+.table th, .table td {
+  text-align: center;
+  padding: 12px;
+  font-size: 16px;
+}
+
+/* Invoice Styling */
+.invoice-container {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  padding: 25px;
+  border: 2px solid #d4af37;
+  background: white;
+  box-shadow: 0px 10px 25px rgba(212, 175, 55, 0.2);
+}
+
+.invoice-container h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #d4af37;
+}
+
+.invoice-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.invoice-container th, .invoice-container td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #d4af37;
+  word-break: break-word;
+}
+
+.invoice-container th {
+  background: #d4af37;
+  color: white;
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+  h1, h2 {
+    font-size: 22px;
+  }
+  .btn-gold {
+    font-size: 16px;
+    padding: 10px;
+  }
+  .invoice-container table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
