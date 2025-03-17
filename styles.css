@@ -1,0 +1,120 @@
+/* Enhanced Styling with Bootstrap for Full Responsiveness */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+  margin: 20px auto;
+}
+
+h1 {
+  text-align: center;
+  color: #007bff;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+.form-label {
+  font-weight: bold;
+  color: #444;
+}
+
+.form-control, .form-select {
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+textarea.form-control {
+  resize: vertical;
+}
+
+/* Buttons with Hover Effects */
+.btn-primary, .btn-danger, .btn-success {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover, .btn-danger:hover, .btn-success:hover {
+  transform: scale(1.05);
+}
+
+/* Invoice Styling for Responsive Design */
+.invoice-container {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  border: 2px solid #007bff;
+  background: white;
+  box-shadow: 0px 8px 20px rgba(0, 123, 255, 0.2);
+  overflow-x: auto;
+}
+
+.invoice-container h2 {
+  text-align: center;
+  font-size: 22px;
+  color: #007bff;
+}
+
+.invoice-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.invoice-container th, .invoice-container td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #007bff;
+  word-break: break-word;
+}
+
+.invoice-container th {
+  background: #007bff;
+  color: white;
+}
+
+.invoice-container .thank-you {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #444;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .container {
+      padding: 15px;
+  }
+  h1 {
+      font-size: 22px;
+  }
+  .btn-primary, .btn-danger, .btn-success {
+      font-size: 14px;
+      padding: 10px;
+  }
+  .invoice-container h2 {
+      font-size: 18px;
+  }
+  .invoice-container table {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+  }
+  .invoice-container th, .invoice-container td {
+      font-size: 14px;
+      padding: 8px;
+  }
+}
